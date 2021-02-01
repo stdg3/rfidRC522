@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="windows-1254"?>
+<!--Bu bir denemedir-->
+<üst_düğüm>
+  <alt_düğüm seçenek="değer">Salt yazı</alt_düğüm>
+</üst_düğüm>

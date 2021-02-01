@@ -1,0 +1,11 @@
+C:\Users\stdg3\source\repos\rfidRc522\rfidRc522\bin\Debug\rfidRc522.exe.config
+C:\Users\stdg3\source\repos\rfidRc522\rfidRc522\bin\Debug\rfidRc522.exe
+C:\Users\stdg3\source\repos\rfidRc522\rfidRc522\bin\Debug\rfidRc522.pdb
+C:\Users\stdg3\source\repos\rfidRc522\rfidRc522\obj\Debug\rfidRc522.csprojAssemblyReference.cache
+C:\Users\stdg3\source\repos\rfidRc522\rfidRc522\obj\Debug\rfidRc522.Properties.Resources.resources
+C:\Users\stdg3\source\repos\rfidRc522\rfidRc522\obj\Debug\rfidRc522.csproj.GenerateResource.cache
+C:\Users\stdg3\source\repos\rfidRc522\rfidRc522\obj\Debug\rfidRc522.csproj.CoreCompileInputs.cache
+C:\Users\stdg3\source\repos\rfidRc522\rfidRc522\obj\Debug\rfidRc522.exe
+C:\Users\stdg3\source\repos\rfidRc522\rfidRc522\obj\Debug\rfidRc522.pdb
+C:\Users\stdg3\source\repos\rfidRc522\rfidRc522\obj\Debug\rfidRc522.Form1.resources
+C:\Users\stdg3\source\repos\rfidRc522\rfidRc522\bin\Debug\idDB.xml
