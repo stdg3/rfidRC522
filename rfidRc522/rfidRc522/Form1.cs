@@ -111,6 +111,7 @@ namespace rfidRc522
                     if (varmi == true)
                     {
                         textBoxConsole.AppendText("\r\nErişime izin verildi!!");
+                        serialPortArd.Write("klu");
                     }
                 }
                 

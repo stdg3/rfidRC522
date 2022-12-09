@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.comboBoxSerials = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonConn = new System.Windows.Forms.Button();
             this.buttonDC = new System.Windows.Forms.Button();
+            this.buttonConn = new System.Windows.Forms.Button();
             this.timer1gibi = new System.Windows.Forms.Timer(this.components);
             this.serialPortArd = new System.IO.Ports.SerialPort(this.components);
             this.labelMessage = new System.Windows.Forms.Label();
@@ -44,10 +44,10 @@
             this.textBoxCardId = new System.Windows.Forms.TextBox();
             this.textBoxAdSad = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.labelCardId = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonYeniKayit = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.buttonYeniKayit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelCardId = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -80,18 +80,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Port Info";
             // 
-            // buttonConn
-            // 
-            this.buttonConn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(242)))), ((int)(((byte)(40)))));
-            this.buttonConn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(13)))), ((int)(((byte)(24)))));
-            this.buttonConn.Location = new System.Drawing.Point(16, 57);
-            this.buttonConn.Name = "buttonConn";
-            this.buttonConn.Size = new System.Drawing.Size(89, 32);
-            this.buttonConn.TabIndex = 1;
-            this.buttonConn.Text = "Connect";
-            this.buttonConn.UseVisualStyleBackColor = false;
-            this.buttonConn.Click += new System.EventHandler(this.button1_Click);
-            // 
             // buttonDC
             // 
             this.buttonDC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(33)))), ((int)(((byte)(46)))));
@@ -103,6 +91,18 @@
             this.buttonDC.Text = "DisConnect";
             this.buttonDC.UseVisualStyleBackColor = false;
             this.buttonDC.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // buttonConn
+            // 
+            this.buttonConn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(242)))), ((int)(((byte)(40)))));
+            this.buttonConn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(13)))), ((int)(((byte)(24)))));
+            this.buttonConn.Location = new System.Drawing.Point(16, 57);
+            this.buttonConn.Name = "buttonConn";
+            this.buttonConn.Size = new System.Drawing.Size(89, 32);
+            this.buttonConn.TabIndex = 1;
+            this.buttonConn.Text = "Connect";
+            this.buttonConn.UseVisualStyleBackColor = false;
+            this.buttonConn.Click += new System.EventHandler(this.button1_Click);
             // 
             // timer1gibi
             // 
@@ -199,23 +199,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Yeni Kayıt";
             // 
-            // labelCardId
+            // checkBox1
             // 
-            this.labelCardId.AutoSize = true;
-            this.labelCardId.Location = new System.Drawing.Point(6, 19);
-            this.labelCardId.Name = "labelCardId";
-            this.labelCardId.Size = new System.Drawing.Size(43, 13);
-            this.labelCardId.TabIndex = 7;
-            this.labelCardId.Text = "Card ID";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Adı Soyadı";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(33)))), ((int)(((byte)(46)))));
+            this.checkBox1.Location = new System.Drawing.Point(9, 97);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(214, 17);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "Id ve Personel Bilgileri boş geçilmemiştir.";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // buttonYeniKayit
             // 
@@ -229,17 +223,23 @@
             this.buttonYeniKayit.UseVisualStyleBackColor = false;
             this.buttonYeniKayit.Click += new System.EventHandler(this.buttonYeniKayit_Click);
             // 
-            // checkBox1
+            // label1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(33)))), ((int)(((byte)(46)))));
-            this.checkBox1.Location = new System.Drawing.Point(9, 97);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(214, 17);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Id ve Personel Bilgileri boş geçilmemiştir.";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Adı Soyadı";
+            // 
+            // labelCardId
+            // 
+            this.labelCardId.AutoSize = true;
+            this.labelCardId.Location = new System.Drawing.Point(6, 19);
+            this.labelCardId.Name = "labelCardId";
+            this.labelCardId.Size = new System.Drawing.Size(43, 13);
+            this.labelCardId.TabIndex = 7;
+            this.labelCardId.Text = "Card ID";
             // 
             // pictureBox1
             // 
@@ -287,7 +287,7 @@
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "KLU EEM B1 RFID";
+            this.Text = "KLU EEM RFID";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
