@@ -6,6 +6,8 @@
 #define SS_PIN 10
 #define ledPin 13
 
+string incomeMessage = "";
+
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
 String lastRfid = "";
@@ -39,5 +41,15 @@ void loop()
   rfid.trim();
   rfid.toUpperCase();
   Serial.print(rfid);
+
+  while(Serial.available()) {
+  incomeMessage= Serial.readString();
+  }
+  if(incomeMessage == "klu"){
+    digitalWrite(ledPin, HIGH);
+    delay(3000);
+    digitalWrite(ledPin, LOW);
+    incomeMessage = "";
+  }
   delay(200);
 }
